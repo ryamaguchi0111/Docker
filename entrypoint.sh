@@ -11,9 +11,9 @@ groupmod -g $GROUP_ID user
 export HOME=/home/user
 
 # python3.6 をデフォルトに
-#mkdir -p $HOME/bin
-#mkdir -p /usr/bin
-#ln -s -f /usr/bin/python3.6 /usr/bin/python
+# mkdir -p $HOME/bin
+# mkdir -p /usr/bin
+# ln -s -f /usr/bin/python3.6 /usr/bin/python
 
 # user 以下にjupyter lab の設定ファイルを保存
 # config manager
