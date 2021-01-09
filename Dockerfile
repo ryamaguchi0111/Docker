@@ -57,8 +57,9 @@ RUN pip3 install jupyter && \
 		>> /home/jupyter_notebook.sh && \
 	chmod +x /home/jupyter_notebook.sh
 ########## Jupyter Lab ##########
-RUN pip3 install jupyterlab==0.35.6
-# RUN pip3 install jupyterlab==1.0.0
+# RUN pip3 install jupyterlab==2.0
+# RUN pip3 install jupyterlab==0.35.6
+RUN pip3 install jupyterlab==1.0
 # node js を最新verにする
 RUN npm -y install -g n
 # RUN npm -y install n -g
@@ -68,7 +69,7 @@ RUN apt purge -y nodejs npm
 ## vim extansion
 RUN jupyter labextension install jupyterlab_vim
 ## toc
-RUN jupyter labextension install @jupyterlab/toc
+# RUN jupyter labextension install @jupyterlab/toc
 ## matplotlib
 # RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager 
 # RUN jupyter labextension install jupyter-matplotlib
